@@ -1,0 +1,175 @@
+.left-menu {
+    display: block;
+    width: 21%;
+    background-color: white;/*Цвет левой колонки*/
+    height: 100vh;/*Высота всего правого мею на высоту браузера*/
+    overflow: auto;/*Появляется скролинг при увеличении содержимого*/
+}
+
+.left-menu>p {
+    color: black;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    /*Все оглавления левого меню по центру*/
+}
+
+.logo-and-head {
+    background-color: white;
+    text-align: center;
+}
+
+.logo-and-head>a>img {
+    /*Логотип сайта*/
+    width: 90%;
+    /*Логотип в ширину 100 процентов*/
+    padding: 5px;
+}
+
+.contacts {
+    display: flex;
+    margin-left: 10%;
+}
+
+
+.telephone-photo {
+    display: block;
+    padding-top: 1px;
+    padding-right: 0px;
+}
+
+.telephone-photo>a>img {
+    height: 15px;
+}
+
+.telephone-number {
+    display: block;
+}
+
+.telephone-number>a {
+    text-decoration: none;
+    color: black;
+}
+
+.telegram {
+    display: block;
+    padding-top: 1px;
+    padding-left: 10px;
+}
+
+.telegram>a>img {
+    width: 17px;
+}
+
+.viber {
+    display: block;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+.viber>a>img {
+    width: 19px;
+}
+
+.logo-nickname {/*Блок с логотипом и названием аккаунта*/
+    text-align: center;
+}
+
+.logo-nickname>img {
+    /*Фото аккаунта*/
+    padding-top: 10px;
+    width: 30%;
+}
+
+.logo-nickname>p {
+    /*Размер шрифта никнейма*/
+    overflow: hidden;
+    /*Если никнейм слишком длинный, при сворачивании эерана он уходит за блок*/
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.account {
+    /*Стили категории товаров*/
+    border-top: solid;
+    border-bottom: solid;
+    /*Стиль, добавление рамки*/
+    border-width: 1px;
+    /*Ширина стиля рамки*/
+    border-color: #e9e9e9;
+    margin: 5px;/*Величина внешних отступов со всех сторон*/
+    padding-bottom: 5px;
+}
+
+.account>a {
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-radius: 0px;
+    /*Делает ссылки блоками (блочными)*/
+    color: black;
+}
+
+.account>a>img {
+    width: 15px;
+}
+
+.account>a:hover {
+    /*Псевдоклас, позволяет менять стиль елемента (в данном случае ссылок) при наведении курсора*/
+    background-color: #e9e9e9;
+    /*Меняем цвет стиля*/
+}
+
+
+
+.categoty-shop {
+    /*Стили категории товаров*/
+    border-bottom: solid;
+    /*Стиль, добавление рамки*/
+    border-width: 1px;
+    /*Ширина стиля рамки*/
+    border-color: #e9e9e9;
+    margin: 5px;/*Величина внешних отступов со всех сторон*/
+    padding-bottom: 5px;
+}
+
+.categoty-shop>a {
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-radius: 0px;
+    color: black;
+}
+
+.categoty-shop>a>img {
+    width: 15px;
+}
+
+.categoty-shop>a:hover {
+    /*Псевдоклас, позволяет менять стиль елемента (в данном случае ссылок) при наведении курсора*/
+    background-color: #e9e9e9;
+    /*Меняем цвет стиля*/
+}
+
+
+.red-block-left-menu {
+    display: block;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #e9e9e9;
+    background-color: white;
+    height: 40px;
+    margin-top: 30px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .left-menu {
+        display: none;
+    }
+}

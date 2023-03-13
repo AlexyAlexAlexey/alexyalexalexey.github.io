@@ -1,0 +1,293 @@
+.menu-burger-smartphone {/*Скрываем шапку для телефона*/
+    display: none;
+}
+
+#checkbox_toggle {/*Скрывает чекбокс оставляя только картинку*/
+	display: none;
+}
+
+.hamburger {/*Показать гамбургер при уменьшении экрана*/
+    display: block;/*Показать гамбургер при уменьшении экрана*/
+    padding-top: 30px;
+    padding-left: 20px;
+}/*Показать гамбургер при уменьшении экрана*/
+
+.hamburger-line {
+	background-color: black;
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px; /*ширина гамбургера*/
+}
+
+.hamburger-line::before,
+.hamburger-line::after {
+	background-color: black;
+	content: '';
+	display: block;
+	position: absolute;
+	transition: all .3s; /*анимирование гамбургера*/
+	width: 100%; /*вид 100%*/
+	height: 100%;
+}
+
+.hamburger-line::before {
+	top: 7px;
+}
+
+.hamburger-line::after {
+	top: -7px;
+}
+
+
+
+
+
+/*.search-smartphone-btn {/*Кнопка гамбургер поисковик/
+    height: 100%;
+    border: none;/*Убераем рамку/
+    background-color: white;
+    cursor: pointer;/*Курсор меняется на палец при наведении/
+    padding-top: 3px;
+}
+
+.search-smartphone-btn>img {
+    width: 40%;
+}
+
+.left-menu-smartphone {/*Скрываем мобильную версию меню/
+    display: none;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left-menu-smartphone {
+    display: none;
+    position:absolute;/*Чтобы меню на смартфоне было поверх основного изо*/
+    margin-top: 60px;/*Скорее всего этот отступ нужен, потому что указывали отступ по вертикали и кнопке меню бургера*/
+    width: 80%;/*Левое меню 70 процентов дисплея*/
+    background-color: white;/*Цвет левой колонки*/
+    height: 90vh;/*Высота всего правого мею на высоту браузера, пока небыло красного блока. высоту ставил 90*/
+    overflow: auto;/*Появляется скролинг при увеличении содержимого*/
+    border-style: solid;/*Стиль, добавление рамки*/
+    border-width: 1px;/*Ширина стиля рамки*/
+    border-color: #e9e9e9;
+    transform: translateX(-300px);/*Для анимации выдвижения меню*/
+}
+
+.logo-smartphone {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-smartphone>a>img {
+    /*Логотип сайта*/
+    width: 250px;
+    /*Логотип в ширину 100 процентов*/
+    padding: 8px;
+}
+
+.contacts-smartphone {
+    display: flex;
+    margin-left: 10%;
+    padding-top: 12px;
+}
+
+
+.telephone-photo-smartphone {
+    display: block;
+    padding-top: 1px;
+    padding-right: 0px;
+}
+
+.telephone-photo-smartphone>a>img {
+    height: 18px;/*15*/
+}
+
+.telephone-number-smartphone {
+    display: block;
+}
+
+.telephone-number-smartphone>a {
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+}
+
+.telegram-smartphone {
+    display: block;
+    padding-top: 1px;
+    padding-left: 15px;
+}
+
+.telegram-smartphone>a>img {
+    width: 20px;/*17*/
+}
+
+.viber-smartphone {
+    display: block;
+    padding-top: 0px;
+    padding-left: 15px;
+}
+
+.viber-smartphone>a>img {
+    width: 22px;/*19*/
+}
+
+.logo-nickname-smartphone {
+    /*Блок с логотипом и названием аккаунта*/
+    text-align: center;
+}
+
+.logo-nickname-smartphone>img {
+    /*Фото аккаунта*/
+    padding-top: 10px;
+    width: 30%;
+}
+
+.logo-nickname-smartphone>p {
+    /*Размер шрифта никнейма*/
+    overflow: hidden;
+    /*Если никнейм слишком длинный, при сворачивании эерана он уходит за блок*/
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.left-menu-smartphone>p {
+    color: black;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    /*Все оглавления левого меню по центру*/
+}
+
+.account-smartphone {
+    /*Стили категории товаров*/
+    border-top: solid;
+    border-bottom: solid;
+    /*Стиль, добавление рамки*/
+    border-width: 1px;
+    /*Ширина стиля рамки*/
+    border-color: #e9e9e9;
+    /*Радиус рамки блока*/
+    background-color: white;
+    margin: 5px;
+    /*Величина внешних отступов со всех сторон*/
+}
+
+.account-smartphone>a {
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*Уберает синий цвет при клике*/
+}
+
+.account-smartphone>a>img {
+    width: 15px;
+}
+
+
+
+.account-smartphone>a:hover {
+    /*Псевдоклас, позволяет менять стиль елемента (в данном случае ссылок) при наведении курсора*/
+    background-color: #e9e9e9;
+    /*Меняем цвет стиля*/
+}
+
+
+.categoty-shop-smartphone {
+    /*Стили категории товаров*/
+    border-bottom: solid;
+    /*Стиль, добавление рамки*/
+    border-width: 1px;
+    /*Ширина стиля рамки*/
+    border-color: #e9e9e9;
+    border-radius: 0px;
+    /*Радиус рамки блока*/
+    background-color: white;
+    margin: 5px;
+    /*Величина внешних отступов со всех сторон*/
+}
+
+.categoty-shop-smartphone>a {
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+}
+
+.categoty-shop-smartphone>a>img {
+    width: 15px;
+}
+
+.categoty-shop-smartphone>a:hover {
+    /*Псевдоклас, позволяет менять стиль елемента (в данном случае ссылок) при наведении курсора*/
+    background-color: #e9e9e9;
+    /*Меняем цвет стиля*/
+}
+
+.red-block-smartphone {
+    display: block;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #e9e9e9;
+    background-color: white;
+    height: 40px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .menu-burger-smartphone {/*Появляется шапка для телефона*/
+        display: flex;/*Выстраиваем кнопку бургера и логотип в один ряд*/
+        background-color: white;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: #e9e9e9;
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+    }
+
+
+
+    #checkbox_toggle:checked ~ .left-menu-smartphone {
+        display: block;
+        animation: slide-in 0.5s ease-in-out forwards;/*Для анимации выдвижения меню*/
+    }
+
+    @keyframes slide-in {/*Для анимации выдвижения меню*/
+        0% {/*Для анимации выдвижения меню*/
+          transform: translateX(-300px);/*Для анимации выдвижения меню*/
+        }/*Для анимации выдвижения меню*/
+        100% {/*Для анимации выдвижения меню*/
+          transform: translateX(0);/*Для анимации выдвижения меню*/
+        }/*Для анимации выдвижения меню*/
+    }
+}
